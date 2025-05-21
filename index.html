@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Pics 1 Word</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>4 Pics 1 Word</h1>
+        <div class="image-container">
+            <img id="img1" src="" alt="Image 1">
+            <img id="img2" src="" alt="Image 2">
+            <img id="img3" src="" alt="Image 3">
+            <img id="img4" src="" alt="Image 4">
+        </div>
+
+        <div id="answer-box" class="answer-box"></div>
+
+        <button onclick="checkAnswer()" class="submit-btn">SUBMIT</button>
+        <p id="result" class="result-text"></p>
+        <button onclick="nextLevel()" class="next-btn">NEXT ROUND</button>
+    </div>
+    <img src="./backHome.png" id="backHome">
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main-style.css">
+</head>
+<body>
+    <video autoplay loop muted plays-inline src="./images/backgroundVideo.mp4" id="backgroundVideo"></video>
+    <div class="navbar">
+        <div>
+            <img src="./images/logo.png" id="logo">
+        </div>
+        <div>
+            <ul>
+                <li><a href="#aboutDiv">ABOUT</a></li>
+                <li><a href="#miniGamesDiv">MINI GAMES</a></li>
+                <li><a href="#programmers">PROGRAMMERS</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="mainGameDiv">
+        <img src="./images/mainGameLogo.png" id="mainGameLogo">
+    </div>
+    <div id="aboutDiv"> 
+        <h1>ABOUT THE GAME</h1>
+        <div id="about1" class="about-contents">
+            <h2>CEREBRAX</h2>
+            <p>The game name CEREBRAX is a slang term meaning "fast thinker." Created for educational purposes by us, a first year computer engineering students of National College of Science and Technology, our aim is to help all students expand their knowledge and enhance their analytical and critical thinking skills. As students ourselves who often experience boredom and distraction while studying, we conceived the idea: what if we integrated study material into a game? Wouldn't it be fun to study and play simultaneously? This is how we arrived at choosing educational games for our final project in Object-Oriented Programming.</p>
+        </div>
+        <div id="about2" class="about-contents">
+            <h2>MECHANICS OF THE GAME</h2>
+            <h3>OBJECTIVES</h3>
+            <p>Answer questions correctly within 30 seconds to attack the enemy. Wrong or late answers result in the enemy attacking you. The goal is to reduce the enemy's HP to 0 before yours runs out.</p>
+            <h3>GAMEPLAY FLOW</h3>
+            <p>Player and enemy have HP bars. A question appears on screen and a 30-second countdown starts as soon as the question is displayed. Player must select the answer before the timer ends. If the answer is correct, the player will have a chance to choose a skill. Otherwise, the enemy will attack. The next question will be displayed and the countdown will reset. If the player's HP is reduced to 0, the game will be over. On the other hand, if the enemy's HP is reduced to 0, the player will move to the next stage to fight a stronger enemy. The game is consisted of 6 stages.</p>
+        </div>
+    </div>
+    <div id="miniGamesDiv">
+        <h1>MINI GAMES</h1>
+        <div id="miniGamesIcons">
+            <img src="images/gameLogo1.png" id="gameLogo1" class="gameLogos">
+            <img src="images/gameLogo2.png" id="gameLogo2" class="gameLogos">
+            <img src="images/gameLogo3.png" id="gameLogo3" class="gameLogos">
+            <img src="images/gameLogo4.png" id="gameLogo4" class="gameLogos">
+        </div>
+        <div id="miniGamesDescription">Game on! Learn More! Enjoy our collection of mini games, blending fun and education.</div>
+    </div>
+    <div id="programmers"> 
+        <h1>PROGRAMMERS</h1>
+        <div id="programmersImg1">
+            <div class="programmerContainer">
+                <img src="./images/arzadon.jpg" id="programmerImg1" class="programmerImgs">
+                <h2>Arzadon, Steven</h2>
+            </div>
+            <div class="programmerContainer">
+                <img src="./images/banez.jpg" id="programmerImg2" class="programmerImgs">
+                <h2>Bañez, Kiezian</h2>
+            </div>
+            <div class="programmerContainer">
+                <img src="./images/deocareza.jpg" id="programmerImg3" class="programmerImgs">
+                <h2>Deocareza, Arlo</h2>
+            </div>
+            <div class="programmerContainer">
+                <img src="./images/magbuhos.jpg" id="programmerImg4" class="programmerImgs">
+                <h2>Magbuhos, Nicole</h2>
+            </div>
+        </div>
+        <div id="programmersImg2">
+            <div class="programmerContainer">
+                <img src="./images/miranda.jpg" id="programmerImg5" class="programmerImgs">
+                <h2>Miranda, Angela</h2>
+            </div>
+            <div class="programmerContainer">
+                <img src="./images/molina.png" id="programmerImg6" class="programmerImgs">
+                <h2>Molina, Aryanna</h2>
+            </div>
+            <div class="programmerContainer">
+                <img src="./images/ravara.png" id="programmerImg7" class="programmerImgs">
+                <h2>Ravara, Joshua</h2>
+            </div>
+            <div class="programmerContainer">
+                <img src="./images/sartin.png" id="programmerImg8" class="programmerImgs">
+                <h2>Sartin, Jiro</h2>
+            </div>
+        </div>
+    </div>
+    <script src="./main-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Cal Sans", sans-serif;
+}
+
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(20, 20, 20, 0.8);
+    position: fixed; 
+    top: 0px;
+    left: 0px; 
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: purple;
+    transition: color 1s;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+#logo {
+    width: 165px;
+    height: 55px;
+    transition: transform 1s;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#mainGameDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#mainGameLogo {
+    border-radius: 20px;
+    box-shadow: 0 0 3em purple;
+    transition: transform 1s;
+}
+
+#mainGameLogo:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#aboutDiv {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#aboutDiv h1 {
+    color: bisque;
+    text-shadow: 1px 1px 3px black;
+    font-size: 42px;
+}
+
+.about-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    background-color: rgba(238, 130, 238, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 0 1em purple;
+    padding: 20px;
+    margin: 20px;
+}
+
+.about-contents h2{
+    font-size: 32px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    margin: 5px;
+}
+
+#about2 h3 {
+    font-size: 24px;
+    color: purple;
+    text-shadow: 1px 1px 3px black;
+    margin-top: 20px;
+}
+
+.about-contents p{
+    font-size: 20px;
+}
+
+#miniGamesDiv {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#miniGamesDiv h1 {
+    color: bisque;
+    text-shadow: 1px 1px 3px black;
+    font-size: 42px;
+}
+
+#miniGamesIcons {
+    display: flex;
+    flex-direction: row;
+}
+
+#miniGamesDescription {
+    background-color: rgba(238, 130, 238, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 0 1em purple;
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.gameLogos {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: transform 1s;
+}
+
+.gameLogos:hover {
+    box-shadow: 0 0 1em purple;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#programmers {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#programmers h1 {
+    color: bisque;
+    text-shadow: 1px 1px 3px black;
+    font-size: 42px;
+}
+
+#programmersImg1, #programmersImg2 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.programmerImgs {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.programmerContainer {
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+@media (max-width: 1024px) {
+    .gameLogos {
+        width: 200px;
+        height: 200px;
+    }
+
+    .programmerImgs {
+        width: 200px;
+        height: 200px;
+    }
+
+    #mainGameLogo {
+        width: 80%;
+    }
+
+    #aboutDiv h1, #miniGamesDiv h1, #programmers h1 {
+        font-size: 32px;
+    }
+
+    .about-contents h2 {
+        font-size: 26px;
+    }
+
+    #about2 h3 {
+        font-size: 20px;
+    }
+
+    .about-contents p,
+    #miniGamesDescription {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #miniGamesIcons, 
+    #programmersImg1, 
+    #programmersImg2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gameLogos, .programmerImgs {
+        width: 80%;
+        height: auto;
+    }
+
+    .about-contents {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #aboutDiv h1, #miniGamesDiv h1, #programmers h1 {
+        font-size: 26px;
+    }
+
+    .about-contents h2 {
+        font-size: 22px;
+    }
+
+    #about2 h3 {
+        font-size: 18px;
+    }
+
+    .about-contents p,
+    #miniGamesDescription,
+    .programmerContainer {
+        font-size: 16px;
+    }
+
+    .navbar ul li {
+        font-size: 18px;
+    }
+
+    #logo {
+        width: 120px;
+        height: auto;
+    }
+}
+

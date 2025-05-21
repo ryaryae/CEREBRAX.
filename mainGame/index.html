@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+    <div id="playerStats">
+        <img src="./icons/playerIcon.png" id="playerIcon">
+        <div>
+            <h2 id="playerTitle"></h2>
+            <div id="playerHPBar">
+                <div id="playerHPText"></div>
+                <div id="playerHPBarRemaining"></div>
+            </div>
+            <div id="correctPointsBar">
+                <div id="correctPointsText"></div>
+                <div id="correctPointsFill"></div>
+            </div>
+            <div id="playerATKDiv"> 
+                <h2 id="playerATK"></h2>
+            </div> 
+        </div>
+    </div>
+    <div id="enemyStats">
+        <img src="./icons/enemyIcon1.png" id="enemyIcon">
+        <div>
+            <h2 id="enemyTitle"></h2>
+            <div id="enemyHPBar">
+                <div id="enemyHPText"></div>
+                <div id="enemyHPBarRemaining"></div>
+            </div>
+            <div id="enemyATKDiv"> 
+                <h2 id="enemyATK"></h2>
+            </div> 
+        </div>
+    </div>
+    <b><div id="eventMessage"></div></b>
+    <div id="question">
+        <h2 id="questionTitle"></h2>
+        <div id="choicesDiv">
+            <div class="choicesDivChild">
+                <div id="choice0" class="choices"></div>
+                <div id="choice1" class="choices"></div>
+            </div>
+            <div class="choicesDivChild">
+                <div id="choice2" class="choices"></div>
+                <div id="choice3" class="choices"></div>
+            </div>
+        </div>
+        <div id="timerDivParent">
+            <div id="timerDiv">
+                <h1 id="timer"></h1>
+            </div>
+            <div id="timerBar">
+                <div id="timerBarRemaining"></div>
+            </div>
+        </div>
+    </div>
+    <div id="chooseSkillTitle" class="hidden"><h1>CHOOSE A SKILL</h1></div>
+    <div id="chooseSkill">
+        <div id="chooseSkillIcons">
+            <img src="./playerSkills/playerSkill1.png" id="playerSkill1" class="playerSkills hidden">
+            <img src="./playerSkills/playerSkill2.png" id="playerSkill2" class="playerSkills hidden">
+            <img src="./playerSkills/playerSkill3.png" id="playerSkill3" class="playerSkills hidden">
+            <img src="./playerSkills/playerSkill4.png" id="playerSkill4" class="playerSkills hidden">
+        </div>
+    </div>
+    <div id="hoverSkill1" class="hoverSkills hidden">
+        <h2>CRITICAL STRIKE</h2>
+        <h4>ATTACK</h4>
+        <br>
+        <p><b>DEALS 200% ATK <span id="hoverSkill1-ATK" style="color: blue"></span> TO THE ENEMY</b></p>
+    </div>
+    <div id="hoverSkill2" class="hoverSkills hidden">
+        <h2>SWIFT SLASH</h2>
+        <h4>LIFESTEAL</h4>
+        <br>
+        <p><b>DEALS 150% ATK <span id="hoverSkill2-ATK" style="color: blue"></span> TO THE ENEMY AND HEAL PLAYER FOR 20% MAX HP <span span id="hoverSkill2-Heal" style="color: green"></span></b></p>
+    </div>
+    <div id="hoverSkill3" class="hoverSkills hidden">
+        <h2>ARYANNA'S BLESSING</h2>
+        <h4>HEAL</h4>
+        <br>
+        <p><b>HEAL PLAYER FOR 30% MAX HP <span span id="hoverSkill3-Heal" style="color: green"></span></b></p>
+    </div>
+    <div id="hoverSkill4" class="hoverSkills hidden">
+        <h2>THE DEVIL'S RAGE</h2>
+        <h4>ULTIMATE ABILITY</h4>
+        <br>
+        <p><b>DEALS 500% ATK <span span id="hoverSkill4-ATK" style="color: blue"></span> TO THE ENEMY, RESTORE PLAYER MAX HP, AND INCREASE PLAYER ATK BY 5</b></p>
+        <br>
+        <h3 style="color: red">REQUIRES 7 CORRECT POINTS</h3>
+    </div>
+    <div id="currentLevelText"></div>
+    <div id="playAgainButton" class="hidden">PLAY AGAIN</div>
+    <img src="./backHome.png" id="backHome">
+    <script src="./questions.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
